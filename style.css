@@ -1,0 +1,214 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  padding: 2rem 1rem 0;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 2px solid #00151d;
+  border-radius: 6px;
+  text-align: center;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #38bdf8;
+  color: #0e1a2b;
+}
+
+/* Header Layout */
+header {
+  background: #002b5b;
+  color: white;
+  padding: 2rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Square Photo Frame */
+.photo-frame {
+  width: 180px;
+  height: 210px;
+  overflow: hidden;
+  border: 3px solid white;
+  background: white;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-info h1 {
+  margin-bottom: 0.5rem;
+  font-size: 60px;
+}
+
+.header-info p {
+  margin-bottom: 0.3rem;
+}
+
+.header-info a {
+  color: #aad6ff;
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #002b5b;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+/* Education Section Custom Styles */
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.edu-row:first-of-type {
+  margin-top: 0;
+}
+
+.edu-list {
+  list-style-type: circle;
+}
+
+/*Achievement Row*/
+.achievement-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.achievement-row p {
+  max-width: 75%;
+}
+
+/* ===== Additional Info Section Styling ===== */
+.additional-info-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+/* ===== References Section Styling ===== */
+.references-section {
+  background-color: #f0f4fa;
+  padding: 2rem;
+}
+
+.references-section h2 {
+  color: #002B5B;
+}
+
+.reference-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.download-btn,
+.cert-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background: #002b5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.download-btn:hover,
+.cert-link:hover {
+  background: #004080;
+}
+
+/* ===== Certificates Grid ===== */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cert-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cert-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/*Social Icons*/
+.social-icons a {
+      color: black;
+      font-size: 1.3rem;
+      margin: 0 0.7rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #38bdf8;
+    }
